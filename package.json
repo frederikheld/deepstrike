@@ -8,7 +8,12 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/*.test.js",
+    "test:dev": "mocha --reporter=min --watch \"tests/*.test.js\"",
+    "test:coverage": "nyc mocha tests/*.test.js --verbose",
+    "test:coverage-ci": "nyc --check-coverage --lines 100 mocha tests/*.test.js --verbose",
+    "lint": "./node_modules/.bin/eslint .",
+    "lint-fix": "./node_modules/.bin/eslint --fix ."
   },
   "repository": {
     "type": "git",
@@ -25,5 +30,18 @@
   "bugs": {
     "url": "https://github.com/frederikheld/deepstrike/issues"
   },
-  "homepage": "https://github.com/frederikheld/deepstrike#readme"
+  "homepage": "https://github.com/frederikheld/deepstrike#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-mocha": "^9.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "espree": "^9.0.0",
+    "mocha": "^9.1.2"
+  }
 }
