@@ -3,9 +3,9 @@ name: deepstrike quality checks
 on:
   workflow_dispatch:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   quality-checks:
