@@ -4,10 +4,10 @@ const chai = require('chai')
 chai.should()
 const expect = chai.expect
 
-const patchObjectInPlace = require('../lib/object.patch-in-place')
+const patchObjectInPlace = require('../lib/object.patchinplace')
 
-describe('object.patch', function () {
-  it('exports the function patchObject', function () {
+describe('object.patchInPlace', function () {
+  it('exports the function patchInPlace', function () {
     expect(patchObjectInPlace.name).to.equal('patchObjectInPlace')
   })
 
