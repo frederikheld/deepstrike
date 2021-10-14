@@ -4,7 +4,7 @@ const chai = require('chai')
 chai.should()
 const expect = chai.expect
 
-const patchObject = require('../lib/object.patch')
+const patchObject = require('../lib/patch-object')
 
 describe('object.patch', function () {
   it('exports the function patchObject', function () {
