@@ -1,0 +1,29 @@
+{
+  "name": "deepstrike",
+  "version": "0.0.1",
+  "description": "There's lodash, there's underscore - and there's all the little helpers I wrote my self.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frederikheld/deepstrike.git"
+  },
+  "keywords": [
+    "utilies",
+    "helper",
+    "underscore",
+    "lodash"
+  ],
+  "author": "Frederik S. Held (kontakt@frederikheld.de)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frederikheld/deepstrike/issues"
+  },
+  "homepage": "https://github.com/frederikheld/deepstrike#readme"
+}
