@@ -43,5 +43,8 @@
     "eslint-plugin-promise": "^5.1.0",
     "espree": "^9.0.0",
     "mocha": "^9.1.2"
+  },
+  "dependencies": {
+    "nyc": "^15.1.0"
   }
 }
