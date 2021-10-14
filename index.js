@@ -1,3 +1,5 @@
 'use strict'
 
-module.exports = { }
+module.exports = {
+  patchObject: require('./lib/object.patch')
+}
