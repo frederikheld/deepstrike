@@ -4,7 +4,7 @@ const chai = require('chai')
 chai.should()
 const expect = chai.expect
 
-describe('test setup', function () {
+describe('check test setup', function () {
   it('should run tests in should style', function () {
     'hello world'.should.equal('hello world')
   })
