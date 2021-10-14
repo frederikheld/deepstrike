@@ -4,7 +4,7 @@ const chai = require('chai')
 chai.should()
 const expect = chai.expect
 
-const patchObjectInPlace = require('../lib/object.patchinplace')
+const patchObjectInPlace = require('../lib/patch-object-in-place')
 
 describe('object.patchInPlace', function () {
   it('exports the function patchInPlace', function () {
