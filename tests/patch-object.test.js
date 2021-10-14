@@ -6,7 +6,7 @@ const expect = chai.expect
 
 const patchObject = require('../lib/patch-object')
 
-describe('object.patch', function () {
+describe('patchObject', function () {
   it('exports the function patchObject', function () {
     expect(patchObject.name).to.equal('patchObject')
   })

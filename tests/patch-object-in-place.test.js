@@ -6,7 +6,7 @@ const expect = chai.expect
 
 const patchObjectInPlace = require('../lib/patch-object-in-place')
 
-describe('object.patchInPlace', function () {
+describe('patchObjectInPlace', function () {
   it('exports the function patchInPlace', function () {
     expect(patchObjectInPlace.name).to.equal('patchObjectInPlace')
   })
