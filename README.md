@@ -1,6 +1,6 @@
 # DeepStrike
 
-There's lodash, there's underscore - and there's all the little helpers I wrote my self.
+There's lodash, there's underscore - and there's all the little helpers I wrote for my self.
 
 ## Install
 
@@ -20,4 +20,4 @@ const ö = require('deepstrike')
 const patched = ö.patchObject({ foo: 1, bar: 2 }, { bar: 3 })
 ```
 
-The OG constant name for DeepStrike is the `ö`, because it's fun to look at this guy who's so impressed about how much easier it is to work with _DeepStrike_ than writing all the functions themselves. If this character is not available on your keyboard, I recommend to use the name `ds` instead.
+The OG constant name for DeepStrike is the `ö` because it's fun to look at this guy who's so impressed about how much easier it is to work with _DeepStrike_ than writing all the functions themselves. If this character is not available on your keyboard, I recommend to use the name `ds` instead.
