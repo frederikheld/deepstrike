@@ -23,6 +23,8 @@ _If this PR is related to an issue in the [issue tracker](https://github.com/fre
 - [ ] Are the changes tested?
       
   If this PR improves an existing function: did you update the tests to test new behavior?
+  
+  If this PR removes an existing function: did you remove the respective tests?
 
 - [ ] Is there one test suite per function? (see folder structure in [`/tests`](../tests))
 
