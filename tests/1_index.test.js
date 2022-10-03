@@ -8,6 +8,7 @@ const buildNestedObject = require('../lib/build-nested-object')
 const patchObject = require('../lib/patch-object')
 const patchObjectInPlace = require('../lib/patch-object-in-place')
 const roundPrecisely = require('../lib/round-precisely')
+const median = require('../lib/median')
 
 const ö = require('../index')
 
@@ -30,5 +31,10 @@ describe('module', function () {
   it('exports the function `roundPrecisely`', function () {
     expect(ö.roundPrecisely).to.equal(roundPrecisely)
     expect(typeof ö.roundPrecisely).equals('function')
+  })
+
+  it('exports the function `median`', function () {
+    expect(ö.median).to.equal(median)
+    expect(typeof ö.median).equals('function')
   })
 })
