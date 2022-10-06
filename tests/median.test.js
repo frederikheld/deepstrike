@@ -11,7 +11,7 @@ describe('median', function () {
     expect(median.name).to.equal('median')
   })
 
-  it('returns the middle item after sorting for an odd number of numbers in the array', function () {
+  it('returns the middle item after sorting for an odd number of numbers in the set', function () {
     const data = [
       // default cases:
       { input: [3, 12, 23, 1, 3], expected: 3 },
@@ -29,7 +29,7 @@ describe('median', function () {
     })
   })
 
-  it('returns the arithmetic middle of the both middle items after sorting for an even number of numbers in the array', function () {
+  it('returns the arithmetic middle of the both middle items after sorting for an even number of numbers in the set', function () {
     const data = [
       // default cases:
       { input: [3, 12, 23, 1, 3, 3], expected: 3 },
@@ -49,7 +49,7 @@ describe('median', function () {
     })
   })
 
-  it('returns undefined for an empty array', function () {
+  it('returns undefined for an empty set', function () {
     expect(median([])).to.eql(undefined)
   })
 })
