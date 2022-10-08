@@ -54,6 +54,7 @@ describe('generateCode', function () {
     it('throws a `RangeError` if paramenter `length` is 0 or negative', function () {
       const expectedError = RangeError
       const expectedMessage = '`length` can\'t be 0 or negative!'
+
       expect(() => { generateCode(0) }).to.throw(expectedError, expectedMessage)
 
       expect(() => { generateCode(-1) }).to.throw(expectedError, expectedMessage)
