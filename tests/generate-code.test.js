@@ -34,7 +34,7 @@ describe('generateCode', function () {
     })
 
     // check sample for duplicates:
-    sample.forEach((item, index) => {
+    sample.forEach((item) => {
       expect(checkedItems.indexOf(item)).equal(-1)
       checkedItems.push(item)
     })
@@ -65,7 +65,7 @@ describe('generateCode', function () {
   describe('first parameter `characters`', function () {
     it('defaults to upper-case characters A-Z and numbers', function () {
       const range = (new Array(10)).fill()
-      range.forEach((item, index) => {
+      range.forEach(() => {
         expect(generateCode()).to.match(/[A-Z0-9]{5}/)
       })
     })
@@ -74,17 +74,17 @@ describe('generateCode', function () {
       const range = (new Array(10)).fill()
 
       const inputCharacters1 = 'ABC'
-      range.forEach((item, index) => {
+      range.forEach(() => {
         expect(generateCode(5, inputCharacters1)).to.match(/[A-C]{5}/)
       })
 
       const inputCharacters2 = 'A'
-      range.forEach((item, index) => {
+      range.forEach(() => {
         expect(generateCode(5, inputCharacters2)).to.match(/[A]{5}/)
       })
 
       const inputCharacters3 = 'ABCabc123'
-      range.forEach((item, index) => {
+      range.forEach(() => {
         expect(generateCode(5, inputCharacters3)).to.match(/[A-Ca-c1-3]{5}/)
       })
     })
