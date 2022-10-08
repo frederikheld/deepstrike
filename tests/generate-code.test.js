@@ -71,18 +71,21 @@ describe('generateCode', function () {
     })
 
     it('can be set to any string of characters', function () {
-      const inputCharacters1 = 'ABC'
-
       const range = (new Array(10)).fill()
+
+      const inputCharacters1 = 'ABC'
       range.forEach((item, index) => {
         expect(generateCode(5, inputCharacters1)).to.match(/[A-C]{5}/)
+      })
 
-        const inputCharacters2 = 'A'
+      const inputCharacters2 = 'A'
+      range.forEach((item, index) => {
+        expect(generateCode(5, inputCharacters2)).to.match(/[A]{5}/)
+      })
 
-        const range = (new Array(10)).fill()
-        range.forEach((item, index) => {
-          expect(generateCode(5, inputCharacters2)).to.match(/[A]{5}/)
-        })
+      const inputCharacters3 = 'ABCabc123'
+      range.forEach((item, index) => {
+        expect(generateCode(5, inputCharacters3)).to.match(/[A-Ca-c1-3]{5}/)
       })
     })
 
