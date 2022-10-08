@@ -9,6 +9,7 @@ const patchObject = require('../lib/patch-object')
 const patchObjectInPlace = require('../lib/patch-object-in-place')
 const roundPrecisely = require('../lib/round-precisely')
 const median = require('../lib/median')
+const generateCode = require('../lib/generate-code')
 
 const ö = require('../index')
 
@@ -36,5 +37,10 @@ describe('module', function () {
   it('exports the function `median`', function () {
     expect(ö.median).to.equal(median)
     expect(typeof ö.median).equals('function')
+  })
+
+  it('exports the function `generateCode`', function () {
+    expect(ö.generateCode).to.equal(generateCode)
+    expect(typeof ö.generateCode).equals('function')
   })
 })
