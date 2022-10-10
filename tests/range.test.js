@@ -25,15 +25,16 @@ describe('generateCode', function () {
     // They are not undefined, but emtpy, whatever that means.
     // Arrays with empty elements can't be iterated, so the array
     // has to be filled with `(new Array(5)).fill()`.
+    // This is what we test here.
     // I couldn't figure out how to test an array for empty elements,
     // so we are going to check if the loop runs instead.
 
     const r = range(10) // this line is meta ;-P
+    // const r = (new Array(10)).fill()
     r.forEach((item, index) => {
       const samples = []
 
-      const s = range(index) // this is where the function is actually being tested
-      s.forEach(() => {
+      range(index).forEach(() => { // this is where the function is actually being tested
         samples.push('yay!')
       })
 
