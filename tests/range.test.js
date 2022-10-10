@@ -6,7 +6,7 @@ const expect = chai.expect
 
 const range = require('../lib/range')
 
-describe('generateCode', function () {
+describe('range', function () {
   it('exports the function `range`', function () {
     expect(range.name).to.equal('range')
   })
