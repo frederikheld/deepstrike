@@ -7,7 +7,7 @@ const expect = chai.expect
 const median = require('../lib/median')
 
 describe('median', function () {
-  it('exports the function median', function () {
+  it('exports the function `median`', function () {
     expect(median.name).to.equal('median')
   })
 
