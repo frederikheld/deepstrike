@@ -8,5 +8,6 @@ module.exports = {
   median: require('./lib/median'),
   generateCode: require('./lib/generate-code'),
   range: require('./lib/range'),
-  kebabCaseToCamelCase: require('./lib/kebab-case-to-camel-case')
+  kebabCaseToCamelCase: require('./lib/kebab-case-to-camel-case'),
+  kebabCaseToPascalCase: require('./lib/kebab-case-to-pascal-case')
 }

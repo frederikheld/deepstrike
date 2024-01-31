@@ -12,6 +12,7 @@ const median = require('../lib/median')
 const generateCode = require('../lib/generate-code')
 const range = require('../lib/range')
 const kebabCaseToCamelCase = require('../lib/kebab-case-to-camel-case')
+const kebabCaseToPascalCase = require('../lib/kebab-case-to-pascal-case')
 
 const ö = require('../index')
 
@@ -54,5 +55,10 @@ describe('module', function () {
   it('exports the function `kebabCaseToCamelCase`', function () {
     expect(ö.kebabCaseToCamelCase).to.equal(kebabCaseToCamelCase)
     expect(typeof ö.kebabCaseToCamelCase).equals('function')
+  })
+
+  it('exports the function `kebabCaseToPascalCase`', function () {
+    expect(ö.kebabCaseToPascalCase).to.equal(kebabCaseToPascalCase)
+    expect(typeof ö.kebabCaseToPascalCase).equals('function')
   })
 })
