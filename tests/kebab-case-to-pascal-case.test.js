@@ -11,14 +11,15 @@ describe('kebabCaseToPascalCase', function () {
     expect(kebabCaseToPascalCase.name).to.equal('kebabCaseToPascalCase')
   })
 
-  it('turns the given string in kebab-case into a return value in camelCase', function () {
+  it('turns the given string parameter in kebab-case into a return value in PascalCase', function () {
     const samples = [
       { in: 'kebab-case', out: 'KebabCase' },
       { in: 'something-else', out: 'SomethingElse' },
       { in: 'kebab-case-multi', out: 'KebabCaseMulti' },
       { in: 'some-more-multi', out: 'SomeMoreMulti' },
       { in: 'even-more-concatenated-words', out: 'EvenMoreConcatenatedWords' },
-      { in: 'kebab', out: 'Kebab' }
+      { in: 'kebab', out: 'Kebab' },
+      { in: '', out: '' }
     ]
 
     samples.forEach((item) => {
