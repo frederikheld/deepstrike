@@ -11,6 +11,7 @@ const roundPrecisely = require('../lib/round-precisely')
 const median = require('../lib/median')
 const generateCode = require('../lib/generate-code')
 const range = require('../lib/range')
+const kebabCaseToCamelCase = require('../lib/kebab-case-to-camel-case')
 
 const ö = require('../index')
 
@@ -48,5 +49,10 @@ describe('module', function () {
   it('exports the function `range`', function () {
     expect(ö.range).to.equal(range)
     expect(typeof ö.range).equals('function')
+  })
+
+  it('exports the function `kebabCaseToCamelCase`', function () {
+    expect(ö.kebabCaseToCamelCase).to.equal(kebabCaseToCamelCase)
+    expect(typeof ö.kebabCaseToCamelCase).equals('function')
   })
 })

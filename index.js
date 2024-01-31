@@ -7,5 +7,6 @@ module.exports = {
   roundPrecisely: require('./lib/round-precisely'),
   median: require('./lib/median'),
   generateCode: require('./lib/generate-code'),
-  range: require('./lib/range')
+  range: require('./lib/range'),
+  kebabCaseToCamelCase: require('./lib/kebab-case-to-camel-case')
 }
