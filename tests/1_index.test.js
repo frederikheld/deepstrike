@@ -13,6 +13,7 @@ const generateCode = require('../lib/generate-code')
 const range = require('../lib/range')
 const kebabCaseToCamelCase = require('../lib/kebab-case-to-camel-case')
 const kebabCaseToPascalCase = require('../lib/kebab-case-to-pascal-case')
+const camelCaseToKebabCase = require('../lib/camel-case-to-kebab-case')
 
 const ö = require('../index')
 
@@ -60,5 +61,10 @@ describe('module', function () {
   it('exports the function `kebabCaseToPascalCase`', function () {
     expect(ö.kebabCaseToPascalCase).to.equal(kebabCaseToPascalCase)
     expect(typeof ö.kebabCaseToPascalCase).equals('function')
+  })
+
+  it('exports the function `camelCaseToKebabCase`', function () {
+    expect(ö.camelCaseToKebabCase).to.equal(camelCaseToKebabCase)
+    expect(typeof ö.camelCaseToKebabCase).equals('function')
   })
 })
