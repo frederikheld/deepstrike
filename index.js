@@ -9,5 +9,6 @@ module.exports = {
   generateCode: require('./lib/generate-code'),
   range: require('./lib/range'),
   kebabCaseToCamelCase: require('./lib/kebab-case-to-camel-case'),
-  kebabCaseToPascalCase: require('./lib/kebab-case-to-pascal-case')
+  kebabCaseToPascalCase: require('./lib/kebab-case-to-pascal-case'),
+  camelCaseToKebabCase: require('./lib/camel-case-to-kebab-case')
 }
