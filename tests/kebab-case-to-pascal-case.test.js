@@ -18,12 +18,15 @@ describe('kebabCaseToPascalCase', function () {
       { in: 'kebab-case-multi', out: 'KebabCaseMulti' },
       { in: 'some-more-multi', out: 'SomeMoreMulti' },
       { in: 'even-more-concatenated-words', out: 'EvenMoreConcatenatedWords' },
-      { in: 'kebab', out: 'Kebab' },
-      { in: '', out: '' }
+      { in: 'kebab', out: 'Kebab' }
     ]
 
     samples.forEach((item) => {
       expect(kebabCaseToPascalCase(item.in)).to.equal(item.out)
     })
+  })
+
+  it('returns an empty string if an empty string was given', function () {
+    expect(kebabCaseToPascalCase('')).to.equal('')
   })
 })
