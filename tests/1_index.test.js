@@ -14,6 +14,7 @@ const range = require('../lib/range')
 const kebabCaseToCamelCase = require('../lib/kebab-case-to-camel-case')
 const kebabCaseToPascalCase = require('../lib/kebab-case-to-pascal-case')
 const camelCaseToKebabCase = require('../lib/camel-case-to-kebab-case')
+const getValueFromNestedObject = require('../lib/get-value-from-nested-object')
 
 const ö = require('../index')
 
@@ -66,5 +67,10 @@ describe('module', function () {
   it('exports the function `camelCaseToKebabCase`', function () {
     expect(ö.camelCaseToKebabCase).to.equal(camelCaseToKebabCase)
     expect(typeof ö.camelCaseToKebabCase).equals('function')
+  })
+
+  it('exports the function `getValueFromNestedObject`', function () {
+    expect(ö.getValueFromNestedObject).to.equal(getValueFromNestedObject)
+    expect(typeof ö.getValueFromNestedObject).equals('function')
   })
 })

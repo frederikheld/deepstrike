@@ -10,5 +10,6 @@ module.exports = {
   range: require('./lib/range'),
   kebabCaseToCamelCase: require('./lib/kebab-case-to-camel-case'),
   kebabCaseToPascalCase: require('./lib/kebab-case-to-pascal-case'),
-  camelCaseToKebabCase: require('./lib/camel-case-to-kebab-case')
+  camelCaseToKebabCase: require('./lib/camel-case-to-kebab-case'),
+  getValueFromNestedObject: require('./lib/get-value-from-nested-object')
 }
